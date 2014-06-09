@@ -1,41 +1,22 @@
 %!TEX root = TIHSC_Project_main.tex
 \chapter{Design Metodology}
 
-\section{Motivation}
-Why do we do all this?
+\begin{enumerate}
+\item Motivation. Why do we do all this?
+\item List/create functional and non-functional requirements, and possibly specify optimization goals.
+\item Block diagram using SysML. This gives a overview of the system
+\item Activity diagram using SysML. This gives a better understanding for the flow through the system.
+\item HW/SW mapping.
+\item Design Space Exploration.
+\item Graphical SystemC Model. Describe everything on a transaction level, using processes and channels.
+\item Convert the graphical model to SystemC code and insert approximate times.
+\item Refine the SystemC model to a Bus Cycle Accurate Model, by adding adapters with real bus signals etc.
+\item Evaluate if the created BCAM model is good enough, otherwise refine the model.
+\item Further work:
+\begin{enumerate}
+\item Refine the BCAM to CAM.
+\item Evaluation
+\item Implementation
+\end{enumerate}
+\end{enumerate}
 
-\section{Requirement specification}
-List/create functional and non-functional requirements, and possibly specify optimization goals.
-
-\section{SysML}
-Creation of a block diagram. This gives a overview of the system
-
-Activity diagram. This gives a better understanding for the flow through the system.
-
-HW/SW mapping. Which processes could be parallelized? Which processes is time consuming? What are the requirements?
-
-Design Space Exploration.
-
-
-\section{SystemC - TLM}
-Graphical SystemC Model. Describe everything on a transaction level, using processes and channels.
-
-Convert the graphical model to SystemC code and insert approximate times.
-
-\section{SystemC - BCAM}
-Refine the SystemC model to a Bus Cycle Accurate Model, by adding adapters with real bus signals etc.
-
-
-\section{Evaluation}
-Evaluate if the created BCAM model is good enough, otherwise refine the model.
-
-\section{Further work}
-Work not included in this project:
-\subsection{SystemC - BCAM}
-Refine the BCAM to CAM.
-
-\subsection{Evaluation}
-Evaluate if the created CAM model is good enough, otherwise refine the model.
-
-\subsection{Implementation}
-When the CAM model is good enough, implement the model on HW/SW.

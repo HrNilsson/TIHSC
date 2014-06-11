@@ -19,31 +19,35 @@ All the processes could be run on a single CPU, however given requirement \ref{r
 Therefore a hardware IP block is allocated to support the CPU with the computation-heavy processes.
 \\Figure \ref{fig:SpecificationModel} also shows that processes P2 and P3 depend on a memory variable, which is allocated as a memory component. 
 
+\newpage
 \section{Binding}
+
+Overall three alternative bindings have been considered. The first alternative is illustrated in Figure ~\ref{fig:Binding1}. Here every process is placed in software (CPU). This model will be the fastest to develop and probably the cheapest. However by placing the operation heavy process "K-means" in software it will probably be hard to meet the time requirement.The second alternative is illustrated in Figure ~\ref{fig:Binding2}. In this alternative every process is binded to hardware blocks. This will decrease the execution time but the implementation will also be much more complex.
 
 \begin{figure}[H]
 \centering
 \begin{subfigure}{.5\textwidth}
 	\centering
 	\includegraphics[width = 180 pt]{Binding1}
-	\caption{1st alternative of binding}
+	\caption{1st alternative of binding - Everything in software}
+	\label{fig:Binding1}
 \end{subfigure}%
 \begin{subfigure}{.5\textwidth}
 	\centering
 	\includegraphics[width = 180 pt]{Binding2}
-	\caption{1st alternative of binding}
+	\caption{2nd alternative of binding - Everything in hardware}
+	\label{fig:Binding2}
 \end{subfigure}%
-
-\begin{subfigure}{.5\textwidth}
-	\centering
-	\includegraphics[width = 180 pt]{Binding3}
-	\caption{1st alternative of binding}
-\end{subfigure}%
-
-\caption{The three binding options}
-\label{fig:Binding1}
 \end{figure}
 
+The third alternative is illustrated in Figure ~\ref{fig:Binding3}. In this alternative a combination of hardware and software is used. The reading and writing of the image is placed in software due to simplicity of these processes. The filtering process has a limited number of operation and it is estimated that it would not benefit to make this in hardware due the added complexity compared with a minimal decrease in execution time. The most operation heavy process is the K-means calculation and paralization of this process would be highly beneficial.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = 180 pt]{Binding3}
+	\caption{3rd alternative of binding - Combination of hardware and software}
+	\label{fig:Binding3}
+\end{figure}
 
 
 \section{Scheduling}

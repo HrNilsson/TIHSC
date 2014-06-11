@@ -10,12 +10,12 @@ I-Logix-RPY-Archive version 8.7.1 * 5066837
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 0;
-				- m_showCmd = 1;
+				- m_nFlags = 2;
+				- m_showCmd = 3;
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -8;
-				- m_ptMaxPositionY = -31;
+				- m_ptMaxPositionY = -30;
 				- m_nLeft = 78;
 				- m_nTop = 78;
 				- m_nRight = 879;
@@ -30,20 +30,20 @@ I-Logix-RPY-Archive version 8.7.1 * 5066837
 				- _name = "ActivityDiagram";
 				- _id = GUID 681d655f-7c2f-424c-aac8-e7ebf08cf538;
 			}
-			- _UpLeft = 0 50 ;
-			- _DownRight = 764 408 ;
+			- _UpLeft = 0 150 ;
+			- _DownRight = 985 623 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 0;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 2;
-				- m_showCmd = 3;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -8;
-				- m_ptMaxPositionY = -31;
+				- m_ptMaxPositionY = -30;
 				- m_nLeft = 26;
 				- m_nTop = 26;
 				- m_nRight = 901;
@@ -59,12 +59,12 @@ I-Logix-RPY-Archive version 8.7.1 * 5066837
 				- _id = GUID 7d7e96a8-bb82-4785-97b7-c94ce47c17d7;
 			}
 			- _UpLeft = 0 0 ;
-			- _DownRight = 962 579 ;
+			- _DownRight = 941 403 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 1;
 		}
 	}
-	- _fullName = "C:\\Users\\ReneNilsson\\Documents\\GitHub\\TIHSC\\Rhapsody SysML\\Project\\Project";
+	- _fullName = "C:\\Users\\Steffan\\Documents\\GitHub\\TIHSC\\Rhapsody SysML\\Project\\Project";
 	- m_SearchScopeList = { IRPYRawContainer 
 		- size = 0;
 	}

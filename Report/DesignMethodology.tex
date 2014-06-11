@@ -1,0 +1,27 @@
+%!TEX root = TIHSC_Project_main.tex
+\chapter{Design Methodology}
+
+When developing complex systems which involves both hardware and software there exist different design methodologies. Traditionally most systems were developed using the bottom-up methodology were a specific platform is chosen at the beginning of project and every other aspect of the system will rely on this choice. Although this seems non flexible this approach is still widely used in the industry today due to huge knowledge about the specific platform.
+To demonstrate the opposite and more flexible process the top-down methodology has been chosen for this project. The top-down methodology is about first describing the system in a high level model and then refining this model as the project progresses.
+Each step in this process is explained briefly in the following list and covered more deeply in the following chapters.
+
+
+\begin{enumerate}
+		
+  \item \textbf{Requirement specification}\\*
+  		According to the general idea of the system specific functional and non-functional requirements can be determined. These will be preliminary requirements due to lack of knowledge of the final system. 
+  \item \textbf{System architecture}\\*
+  		With the preliminary requirements determined the graphical modeling of the system can begin. First step here is to identify the different blocks in the system and their relation. At this level of modeling all blocks will have the stereotype "Block".
+  \item \textbf{System behavioral model}\\*
+  		With the blocks of the system in place the actual functionality of the system can be modeled. The requirements related to user functionality will typically be captured by using activity diagrams.
+  \item \textbf{Functional TLM}\\*
+  		By analyzing the activity diagram different processes in the system can be isolated which then can be illustrated in a functional TLM model with processes, channels and memory
+  \item \textbf{System synthesis}\\*
+  		Partitioning is allocation and mapping combined. In this step the platform architecture is defined by allocating hardware and software components. The different processes from the functional TLM are then mapped to these. 
+  \item \textbf{SystemC TLM}\\*
+  		
+  \item \textbf{SystemC BCAM}\\*
+  		The systemC BCAM is a refined model of the TLM where adapters are added with real bus signals. 
+  \item \textbf{Evaluation}
+  		After the BCAM model has been created it should be evaluated to verify if this is a proper model of the system otherwise it should be refined further. Due to the boundaries of this project the process stops here and no further refinements will be done.
+\end{enumerate}

@@ -27,9 +27,7 @@ Therefore a hardware IP block is allocated to support the CPU with the computati
 \end{figure}
 
 
-
-
-\section{Binding}
+\section{Mapping}
 
 Overall three alternative bindings have been considered. The first alternative is illustrated in Figure ~\ref{fig:Binding1}. Here every process is placed in software (CPU). This model will be the fastest to develop and probably the cheapest. However by placing the operation heavy process "K-means" in software it will probably be hard to meet the time requirement.The second alternative is illustrated in Figure ~\ref{fig:Binding2}. In this alternative every process is binded to hardware blocks. This will decrease the execution time but the implementation will also be much more complex.
 
@@ -57,3 +55,5 @@ The third alternative is illustrated in Figure ~\ref{fig:Binding3}. In this alte
 	\caption{3rd alternative of binding - Combination of hardware and software}
 	\label{fig:Binding3}
 \end{figure}
+
+Because only one process is binded to each processing element there are no need for scheduling in this system.

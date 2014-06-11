@@ -1,10 +1,9 @@
 %!TEX root = TIHSC_Project_main.tex
 \chapter{SystemC TLM}
 The transaction level model (TLM) for a systemC model is good for validating and verifying the model. 
-Here different parts of the application is modelled and thereby verified. 
 
 Throughout this project an application in C/C++ is available. The challenge is then to allocate and bind the different parts to either software or hardware. 
-With a TLM it is possible to envestigate different mappings before implementation. 
+With a TLM it is possible to investigate different mappings before implementation. 
 %Because of the known application some kind of execution time is also known. This makes it possible to prioritise the modelling of the components. 
 
 In the TLM a CPU and the k-means is made as a systemC module. Inside the CPU module three threads are deployed. One for reading in the image, one for writing out the image and one for doing the texton filtering. 

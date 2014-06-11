@@ -9,7 +9,7 @@ System synthesis is part of the model-based system design approach where it is u
 \label{fig:modelBasedSyn}
 \end{figure}
 
-The system behavioural model in figure \ref{fig:SpecificationModel} describes the specification for a Texton mapping system. 
+The system behavioural model in figure \ref{fig:SystemBehavioralModel} describes the specification for a Texton mapping system. 
 The processes, channels and memory variables from the specification model is used as input to the different steps of the system synthesis.  
 
 \section{Allocation}
@@ -17,7 +17,7 @@ The first step of system synthesis is allocation of the needed hardware componen
 The processes of the specification model suggest the need for at least one CPU to handle reading and writing of the image. 
 All the processes could be run on a single CPU, however given requirement \ref{req:timeReq} which states that the Texton filtering should be done within a minute, is it unlikely that a single CPU can make it in time. 
 Therefore a hardware IP block is allocated to support the CPU with the computation-heavy processes.
-\\Figure \ref{fig:SpecificationModel} also shows that processes P2 and P3 depend on a memory variable, which is allocated as a memory component. The allocated components are shown in figure \ref{fig:allocHardComps}.
+\\Figure \ref{fig:SystemBehavioralModel} also shows that processes P2 and P3 depend on a memory variable, which is allocated as a memory component. The allocated components are shown in figure \ref{fig:allocHardComps}.
 
 \begin{figure}[H]
 \centering

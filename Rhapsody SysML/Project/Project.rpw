@@ -5,7 +5,7 @@ I-Logix-RPY-Archive version 8.7.1 * 5066837
 	}
 	- isLoadOnDemand = 0;
 	- myViewsWithID = { IRPYRawContainer 
-		- size = 2;
+		- size = 3;
 		- value = 
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -15,7 +15,35 @@ I-Logix-RPY-Archive version 8.7.1 * 5066837
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -8;
-				- m_ptMaxPositionY = -30;
+				- m_ptMaxPositionY = -31;
+				- m_nLeft = 78;
+				- m_nTop = 78;
+				- m_nRight = 879;
+				- m_nBottom = 496;
+			}
+			- _wasOpenedOnCloseProject = 1;
+			- _theDiagram = { IHandle 
+				- _m2Class = "IStructureDiagram";
+				- _filename = "Default.sbs";
+				- _subsystem = "Default";
+				- _class = "Image Prossesing";
+				- _name = "Image processing diagram";
+				- _id = GUID 4e92d917-c242-4cc7-8c03-a483e69c0ed8;
+			}
+			- _UpLeft = -30 0 ;
+			- _DownRight = 932 579 ;
+			- _instanceName = "";
+			- m_nDiagramIndex = 0;
+		}
+		{ CGEMdiDiagramParams 
+			- _placement = { CCommon_WINDOWPLACEMENT 
+				- m_nLength = 44;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
+				- m_ptMinPositionX = -1;
+				- m_ptMinPositionY = -1;
+				- m_ptMaxPositionX = -8;
+				- m_ptMaxPositionY = -31;
 				- m_nLeft = 78;
 				- m_nTop = 78;
 				- m_nRight = 879;
@@ -30,10 +58,10 @@ I-Logix-RPY-Archive version 8.7.1 * 5066837
 				- _name = "ActivityDiagram";
 				- _id = GUID 681d655f-7c2f-424c-aac8-e7ebf08cf538;
 			}
-			- _UpLeft = 0 150 ;
-			- _DownRight = 985 623 ;
+			- _UpLeft = 0 91 ;
+			- _DownRight = 782 457 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 0;
+			- m_nDiagramIndex = 1;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -43,7 +71,7 @@ I-Logix-RPY-Archive version 8.7.1 * 5066837
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -8;
-				- m_ptMaxPositionY = -30;
+				- m_ptMaxPositionY = -31;
 				- m_nLeft = 26;
 				- m_nTop = 26;
 				- m_nRight = 901;
@@ -58,13 +86,13 @@ I-Logix-RPY-Archive version 8.7.1 * 5066837
 				- _name = "TextonMap";
 				- _id = GUID 7d7e96a8-bb82-4785-97b7-c94ce47c17d7;
 			}
-			- _UpLeft = 0 0 ;
-			- _DownRight = 941 403 ;
+			- _UpLeft = 0 16 ;
+			- _DownRight = 730 328 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 1;
+			- m_nDiagramIndex = 2;
 		}
 	}
-	- _fullName = "C:\\Users\\Steffan\\Documents\\GitHub\\TIHSC\\Rhapsody SysML\\Project\\Project";
+	- _fullName = "C:\\Users\\ReneNilsson\\Documents\\GitHub\\TIHSC\\Rhapsody SysML\\Project\\Project";
 	- m_SearchScopeList = { IRPYRawContainer 
 		- size = 0;
 	}

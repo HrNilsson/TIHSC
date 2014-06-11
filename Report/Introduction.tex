@@ -8,7 +8,7 @@ Comuputers do not have that ability because edge detection typically depends on 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width = 0.5\linewidth]{prikpige}
+\includegraphics[width = 0.4\linewidth]{prikpige}
 \caption{Original picture}
 \label{fig:prikpige}
 \end{figure}
@@ -43,7 +43,7 @@ For the texton mapping k-means clustering is ideal for this classification.
 
 \subsection{K-means}
 \label{sec:Kmeans}
-K-means clustering is an unsupervised classification and takes an n-dimensional feature vector and splits it into $C$ clusters. 
+K-means clustering is an unsupervised classification and takes an n-dimensional feature vector and splits in into $C$ clusters. 
 In this case the 15 filters makes a 15-dimensional feature vector and it is split into 64 clusters. 
 
 To make the classification 64 random points are picked among the existing features, this is now the centers of the clusters. 
@@ -78,7 +78,7 @@ original image and plotted in Matlab.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width = 0.5\linewidth]{result_image}
+\includegraphics[width = 0.4\linewidth]{result_image}
 \caption{The texton map of the original image}
 \label{fig:result}
 \end{figure}
@@ -88,7 +88,7 @@ original image and plotted in Matlab.
 \section{Execution time}
 The texton filtering has been implemented on a CPU and run with 1000 iterations of k-means. 
 The execution time for this operation was about 1200 seconds (20 min.) 
-Acceleration via hardware implementation is expected to get the execution time down to 1 minute. 
+Acceleration via hard ware implementation is expected to get the execution time down to 1 minute. 
 Measurements for the different parts of the algorithm shows that the distance calculation in the k-means has a very long duration every iteration. 
-Therefore focus is on this part.
+Therefore focus in on this part.
 

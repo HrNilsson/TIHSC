@@ -20,6 +20,7 @@ Normal edge detection will not be able to do this distinction,
 on the contrary emphasize all the textures in the dress too.
 
 \section{Texton filtering}
+\label{sec:TextonFiltering}
 By filtering an image with several filters emphasizing dots and lines at different sizes and angels, 
 one can achieve a feature vector for every pixel. 
 The feature vector has a size of $<N\_PIXELS\times DIMENSIONS>$ and is collapsed into a single column vector. 
@@ -42,6 +43,7 @@ For the texton mapping k-means clustering is ideal for this classification.
 
 
 \subsection{K-means}
+\label{sec:Kmeans}
 K-means clustering is an unsupervised classification and takes an n-dimensional feature vector and splits in into $C$ clusters. 
 In this case the 15 filters makes a 15-dimensional feature vector and it is split into 64 clusters. 
 
